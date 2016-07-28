@@ -1,0 +1,87 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ *
+ * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@media screen and (max-width: 1024px) {
+
+  .content {
+    padding: 0 16px;
+  }
+
+}
+
+.crossline {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.home_wrapper {
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.big_name {
+  font-size: 80px;
+  margin: 0;
+
+}
+.subheader {
+  font-family:fira-sans;
+  font-weight: 300;
+  font-size: 35px;
+  margin: 0;
+}
+.face {
+  margin: 10% 0;
+  width: 550px;
+  max-width: 100%;
+}
+
+.chase_logo {
+  width: 150px;
+  margin: auto;
+  margin-top: 10%;
+  .r {
+    fill: #666666;
+  }
+
+  .c {
+    fill: #231f20;
+  }
+}
+
+.chase_logo:hover {
+
+}
+
+.bio_wrapper {
+  background: black;
+  color: white;
+  padding: 10% 15px
+}
+
+.research_wrapper {
+  padding: 10% 15px
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wrapper h3 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
