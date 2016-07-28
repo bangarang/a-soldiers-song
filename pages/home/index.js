@@ -276,7 +276,7 @@ class HomePage extends React.Component {
               <h3 className={s.research_heading}>Research</h3>
               <p>Chase aims to answer research questions related to neuromuscular control. For example, his Master’s thesis project aims to detect how changes in energy expenditure at different walking speeds might be related to the variability of a person’s walking pattern. This project will provide insight to how humans optimize their walking strategy, as well as how people differ in this optimization.</p>
 
-              <h4>Presentations</h4>
+              <h4>Presentations</h4> 
 
               <p>August 2016 - Relationship Between Prosthetic Push-Off Work And Stride-To-Stride Fluctuations In Transtibial Prosthesis Users
               <a href="http://asb2016.asbweb.org/" target="_blank"> 40th Annual Meeting of the American Society of Biomechanics</a>, Raleigh Conference Center, Raleigh, NC</p>
