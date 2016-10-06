@@ -86,13 +86,15 @@ class HomePage extends React.Component {
 
   _onEnter(msg, object) {
     if (object.previousPosition == 'above') {
-      history.push("/" + msg);
+      // history.push("/" + msg);
+      history.replace("/"+msg);
     }
   }
 
   _onLeave(msg, object) {
     if (object.currentPosition == 'above') {
-      history.push("/" + msg);
+      // history.push("/" + msg);
+      history.replace("/"+msg);
     }
   }
 
