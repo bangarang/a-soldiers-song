@@ -51,7 +51,7 @@ tasks.set('html', () => {
   fs.writeFileSync('./public/index.html', output, 'utf8');
   fs.writeFileSync('./public/bio/index.html', output, 'utf8');
   fs.writeFileSync('./public/research/index.html', output, 'utf8');
-  fs.writeFileSync('./public/asb2016/index.html', output, 'utf8');
+  fs.writeFileSync('./public/uno-symposium/index.html', output, 'utf8');
 });
 
 //
