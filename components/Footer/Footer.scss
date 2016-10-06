@@ -1,0 +1,76 @@
+footer {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  color: #231f20;
+  font-weight: 900;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  :global(.subheading), .subheading, .subheading span {
+    font-size: 20px;
+    font-family: 'Goudy';
+    font-style: italic;
+  }
+  .highlight {
+    color: white;
+  }
+  .heading {
+    color: white;
+    font-size: 70px;
+    line-height: 1.5;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  :global(.copy_button) {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    span {
+      font-size: 30px;
+    }
+    :global(.copy_status) {
+      opacity: 0;
+      position: absolute;
+      transition: 0.25s ease-out;
+      background: white;
+      padding: 0 15px;
+      color: black;
+      bottom: 20px;
+      font-size: 14px;
+      &:global(.copied) {
+        opacity: 1;
+        transform: translateX(30px);
+      }
+    }
+    &:hover {
+      :global(.copy_status) {
+        opacity: 1;
+        transform: translateX(30px);
+      }
+    }
+  }
+
+  .social {
+    .social_icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 25px;
+      font-size: 50px;
+      color: #afafaf;
+      transition: 0.15s ease-out;
+      &:hover {
+        color: #84bd00;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.signature {
+  width: 250px;
+  margin: auto;
+  display: table;
+}

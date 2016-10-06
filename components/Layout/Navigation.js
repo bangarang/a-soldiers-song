@@ -54,7 +54,7 @@ class Navigation extends React.Component {
         <a className={s.nav_link} onClick={this.scrollToTop}>Home</a>
         <ScrollLink activeClass="active" className={s.nav_link} to="bio" spy={true} smooth={true} offset={50} duration={500} >Bio</ScrollLink>
         <ScrollLink activeClass="active" className={s.nav_link} to="research" spy={true} smooth={true} offset={50} duration={500} >Research</ScrollLink>
-        <Link className={s.nav_link} to="/asb2016">ASB2016</Link>
+        <ScrollLink activeClass="active" className={s.nav_link} to="uno-symposium" spy={true} smooth={true} offset={50} duration={500} >UNO Symposium</ScrollLink>
       </nav>
     );
   }

@@ -15,6 +15,11 @@
     "chunk": "main"
   },
   {
+    "path": "/uno-symposium",
+    "page": "./pages/home",
+    "chunk": "main"
+  },
+  {
     "path": "/error",
     "page": "./pages/error",
     "chunk": "main"

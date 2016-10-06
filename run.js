@@ -21,7 +21,7 @@ const config = {
   title: 'Chase G Rock',        // Your website title
   url: 'https://blaze.chasegrock.com',          // Your website URL
   project: 'react-static-boilerplate',      // Firebase project. See README.md -> How to Deploy
-  // trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
+  trackingID: 'UA-81632938-1',                 // Google Analytics Site's ID
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
@@ -51,6 +51,7 @@ tasks.set('html', () => {
   fs.writeFileSync('./public/index.html', output, 'utf8');
   fs.writeFileSync('./public/bio/index.html', output, 'utf8');
   fs.writeFileSync('./public/research/index.html', output, 'utf8');
+  fs.writeFileSync('./public/asb2016/index.html', output, 'utf8');
 });
 
 //

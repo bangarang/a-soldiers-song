@@ -10,13 +10,48 @@
 
 import React from 'react';
 import Link from '../Link';
+import s from './Footer.scss';
+import CopyToClipboard from 'react-copy-to-clipboard';
+import cx from 'classnames';
 
-function Footer() {
-  return (
-    <footer className="mdl-mini-footer">
+class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: "hello@chasegrock.com",
+      copied: false
+    };
+  }
 
-    </footer>
-  );
+  copy(){
+    this.setState({copied: true})
+  }
+  componentDidMount() {
+    // window.componentHandler.upgradeElement(this.root);
+  }
+
+  componentWillUnmount() {
+    // window.componentHandler.downgradeElements(this.root);
+  }
+
+  render() {
+
+    return (
+        <footer className={s.footer}>
+          <img src="/signature.svg" className={s.signature} />
+          <p className={s.subheading}>Chase G Rock</p>
+          <CopyToClipboard
+            text={this.state.value}
+            onCopy={this.copy.bind(this)}>
+            <p className="subheading copy_button"><span className="highlight">hello@chasegrock.com</span><span className={this.state.copied ? "copy_status copied" : "copy_status"}>{this.state.copied ? "Copied, Talk to you soon!": "Click to Copy"}</span></p>
+          </CopyToClipboard>
+          <div className={s.social}>
+            <a className={cx(s.social_icon, "icon-spotify")} href="https://play.spotify.com/user/1252553485" target="_blank"></a>
+          </div>
+        </footer>
+    );
+  }
+
 }
 
 export default Footer;

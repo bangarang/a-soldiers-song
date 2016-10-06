@@ -44,21 +44,41 @@
   margin: 0;
 }
 .face {
-  margin: 10% 0;
+  margin: 50px 0;
   width: 550px;
   max-width: 100%;
+}
+
+.main_logo_finished {
+  .r,.c {
+    transition: 0.15s ease-out;
+  }
 }
 
 .chase_logo {
   width: 150px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 100px;
+  overflow: visible;
   .r {
     fill: #666666;
+    stroke-width: 1;
+    stroke: #666666;
   }
 
   .c {
     fill: #231f20;
+    stroke-width: 1;
+    stroke: #231F21;
+  }
+  &:hover {
+    .r {
+      transform: translateX(38px)!important;
+    }
+
+    .c {
+      transform: translateX(-38px)!important;
+    }
   }
 }
 
@@ -69,11 +89,11 @@
 .bio_wrapper {
   background: black;
   color: white;
-  padding: 10% 15px
+  padding: 75px 15px
 }
 
 .research_wrapper {
-  padding: 10% 15px
+  padding: 75px 15px
 }
 
 .wrapper {
@@ -84,4 +104,92 @@
 .wrapper h3 {
   text-transform: uppercase;
   font-size: 50px;
+}
+
+.presentation {
+  line-height: 1.7;
+  margin: 0 0 30px;
+  background: #eee;
+  padding: 15px 15px 20px;
+}
+
+.presentation_button {
+  background: black;
+  color: white;
+  margin-right: 15px;
+  padding: 5px 15px;
+  transition: 0.15s ease-out;
+  float: left;
+  text-transform: uppercase;
+  &:hover {
+    background: #666;
+  }
+}
+
+
+.cv_button {
+  background: white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+  line-height: 1;
+  transition: 0.15s ease-out;
+  padding: 15px;
+
+  h4 {
+    margin: 0;
+  }
+  &:hover {
+    background: #ccc;
+  }
+}
+
+
+.poster_image {
+  box-shadow: 5px 5px 25px #afafaf;
+  display: table;
+  margin: 25px auto;
+  width: 300px;
+  transition: 0.15s ease-out;
+  img {
+    display: block;
+    width: 100%;
+  }
+  &:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 24px rgba(0,0,0,.22),0 19px 76px rgba(0,0,0,.3);
+  }
+}
+.asb_heading {
+  margin-bottom: 0;
+}
+.asb_content {
+  margin-top: 0;
+  color: #666;
+}
+
+:global(.center) {
+  text-align: center;
+}
+
+@media screen and (max-width: 505px) {
+  .chase_logo {
+    width: 125px;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .big_name {
+    font-size: 30px;
+  }
+
+  .subheader {
+    font-size: 25px;
+  }
+
 }

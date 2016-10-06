@@ -12,14 +12,23 @@
   font-weight: bold;
   text-decoration: none;
   font-weight: 300;
-  padding: 15px;
+  padding: 5px 15px;
   cursor: pointer;
   :global(.scrolled) & {
     color: white;
+    &:before {
+      background: white;
+    }
+  }
+  &:global(.active) {
+    &:before {
+      background: white;
+      left:0;
+      right:0;
+    }
   }
 }
 .nav_link:hover {
-  text-decoration: line-through;
 }
 
 
