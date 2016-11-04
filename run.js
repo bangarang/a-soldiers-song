@@ -20,7 +20,7 @@ const path = require('path');
 const config = {
   title: "A Soldier's Song",        // Your website title
   url: '',          // Your website URL
-  trackingID: '',                 // Google Analytics Site's ID
+  trackingID: 'UA-79268921-4',                 // Google Analytics Site's ID
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)

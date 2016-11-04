@@ -3,5 +3,10 @@
     "path": "/",
     "page": "./pages/home",
     "chunk": "main"
+  },
+  {
+    "path": "/a-soldiers-song",
+    "page": "./pages/home",
+    "chunk": "main"
   }
 ]

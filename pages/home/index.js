@@ -84,7 +84,7 @@ class HomePage extends React.Component {
         </span>
 
         { Sound ? <Sound
-          url="/a-soldiers-song.mp3"
+          url="/a-soldiers-song/a-soldiers-song.mp3"
           playStatus={playStatus}
           volume={100}
           onLoading={({bytesLoaded, bytesTotal}) => console.log(`${bytesLoaded / bytesTotal * 100}% loaded`)}
