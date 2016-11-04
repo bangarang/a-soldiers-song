@@ -1,5 +1,5 @@
 {
-  "name": "blaze",
+  "name": "a-soldiers-song",
   "version": "0.0.0",
   "private": true,
   "engines": {
@@ -13,8 +13,10 @@
     "history": "^3.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-fa": "^4.1.2",
     "react-motion": "^0.4.4",
     "react-redux": "^4.4.5",
+    "react-sound": "^0.5.2",
     "redux": "^3.5.2",
     "whatwg-fetch": "^1.0.0"
   },
@@ -41,6 +43,7 @@
     "eslint-plugin-import": "^1.11.1",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "firebase-tools": "^3.0.4",
     "front-matter": "^2.1.0",

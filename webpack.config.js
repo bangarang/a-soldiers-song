@@ -143,6 +143,10 @@ const config = {
         loader: 'url-loader?limit=10000',
       },
       {
+        test: /\.(otf|eot|png|svg|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url?limit=8192'
+      },
+      {
         test: /\.(eot|ttf|wav|mp3)$/,
         loader: 'file-loader',
       },

@@ -3,29 +3,5 @@
     "path": "/",
     "page": "./pages/home",
     "chunk": "main"
-  },
-  {
-    "path": "/bio",
-    "page": "./pages/home",
-    "chunk": "main"
-  },
-  {
-    "path": "/research",
-    "page": "./pages/home",
-    "chunk": "main"
-  },
-  {
-    "path": "/uno-symposium",
-    "page": "./pages/home",
-    "chunk": "main"
-  },
-  {
-    "path": "/error",
-    "page": "./pages/error",
-    "chunk": "main"
-  },
-  {
-    "path": "/about",
-    "page": "./pages/about"
   }
 ]
