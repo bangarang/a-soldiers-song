@@ -18,10 +18,9 @@ const path = require('path');
 
 // TODO: Update configuration settings
 const config = {
-  title: 'Chase G Rock',        // Your website title
-  url: 'https://blaze.chasegrock.com',          // Your website URL
-  project: 'react-static-boilerplate',      // Firebase project. See README.md -> How to Deploy
-  trackingID: 'UA-81632938-1',                 // Google Analytics Site's ID
+  title: "A Soldier's Song",        // Your website title
+  url: '',          // Your website URL
+  trackingID: '',                 // Google Analytics Site's ID
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
@@ -49,9 +48,6 @@ tasks.set('html', () => {
   const render = ejs.compile(template, { filename: './public/index.ejs' });
   const output = render({ debug: webpackConfig.debug, bundle: assets.main.js, config });
   fs.writeFileSync('./public/index.html', output, 'utf8');
-  fs.writeFileSync('./public/bio/index.html', output, 'utf8');
-  fs.writeFileSync('./public/research/index.html', output, 'utf8');
-  fs.writeFileSync('./public/uno-symposium/index.html', output, 'utf8');
 });
 
 //
